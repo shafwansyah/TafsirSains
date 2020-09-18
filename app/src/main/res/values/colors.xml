@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00AFEF</color>
+    <color name="colorPrimaryDark">#00AFEF</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="Cyan">#00AFEF</color>
+    <color name="White">#fff</color>
+    <color name="viewPager">#9CDBF8</color>
+    <color name="textColor">#04063E</color>
+</resources>
