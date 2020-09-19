@@ -11,19 +11,17 @@ import java.util.ArrayList;
 
 public class ReadActivity extends AppCompatActivity {
 
-    private Integer position;
-    private ArrayList<model> modelArrayList;
     private String bacaan;
-    TextView tafsir_detail;
+    TextView tafsir_bacaan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read);
 
-        position = getIntent().getIntExtra("position", 0);
-        tafsir_detail = findViewById(R.id.text_reading);
-        tafsir_detail.setText(modelArrayList.get(position).getBacaan());
+        tafsir_bacaan = findViewById(R.id.text_reading);
+        bacaan = getIntent().getStringExtra("bacaan");
+        tafsir_bacaan.setText(bacaan);
 
         getSupportActionBar().hide();
     }

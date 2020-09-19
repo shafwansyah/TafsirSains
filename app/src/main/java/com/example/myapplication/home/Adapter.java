@@ -47,14 +47,15 @@ public class Adapter extends PagerAdapter {
         View view = layoutInflater.inflate(R.layout.item_viewpager, container, false);
 
         ImageView imageView;
-        TextView title, bacaan;
+        final TextView title;
+        final String bacaan;
 
         imageView = view.findViewById(R.id.img_viewpager);
         title = view.findViewById(R.id.text_viewpager);
-        bacaan = view.findViewById(R.id.text_reading);
 
         imageView.setImageResource(modelList.get(position).getImg_icon());
         title.setText(modelList.get(position).getTitle());
+        bacaan = modelList.get(position).getBacaan();
 
         container.addView(view, 0);
 
@@ -62,7 +63,7 @@ public class Adapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(context, ReadActivity.class);
-                i.putExtra("position", position);
+                i.putExtra("bacaan", bacaan);
                 context.startActivity(i);
             }
         });
