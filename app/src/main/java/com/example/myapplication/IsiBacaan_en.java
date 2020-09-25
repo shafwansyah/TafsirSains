@@ -17,10 +17,10 @@ public class IsiBacaan_en {
             "Biotany",
             "Zoology",
             "Medicine",
-//            "Physiology",
-//            "Embriology",
-//            "General Science",
-//            "Conclusion"
+            "Physiology",
+            "Embriology",
+            "General Science",
+            "Conclusion"
     };
 
     private static Integer[] tafsir_icon = {
@@ -33,10 +33,10 @@ public class IsiBacaan_en {
             R.drawable.botani,
             R.drawable.zoology,
             R.drawable.medicine,
-//            R.drawable.physiologi,
-//            R.drawable.embrio,
-//            R.drawable.general_science,
-//            R.drawable.kesimpulan
+            R.drawable.physiologi,
+            R.drawable.embrio,
+            R.drawable.general_science,
+            R.drawable.kesimpulan
     };
 
     private static String[] tafsir_detail = {
@@ -300,7 +300,141 @@ public class IsiBacaan_en {
                     "\"And in cattle (too) ye have an instuctive example: from within their bodies We produce (milk) for you to drink; there are, in them, (besides), numerous (other) benefits for you and of their(meats) ye eat\" [ 23:21 ]\n" +
                     "The 1400 year old Qur’anic  description of the production of milk in cattle is strikingly similar to what modern physiology has discovered in recent times",
             "MUSLIMS SEEK ANSWERS\n" +
-                    "A group of Muslim Scholars, under the direction of an eminent Yemani Scholar, Sheikh Abdul Majid Azzindani,\tcollected\tinformation\tconcerning embryology1 and other sciences in the Qur'an and undisputed Hadith 2 and translated it into English. They then followed the Qur'anic advice:\n"
+                    "A group of Muslim Scholars, under the direction of an eminent Yemani Scholar, Sheikh Abdul Majid Azzindani,\tcollected\tinformation\tconcerning embryology1 and other sciences in the Qur'an and undisputed Hadith 2 and translated it into English. They then followed the Qur'anic advice:\n" +
+                    "فَاسْأَلُوا أَهْلَ الذِّكْرِ إِنْ كُنْتُمْ لَا تَعْلَمُونَ\n" +
+                    "\"If ye realise this not, ask of those who possess the Message\" [ 16:43 & 21:7 ]\n" +
+                    "All the information from the Qur’an and the undisputed Hadith concerning embryology so gathered, after being translated into English and presented to Prof. (Dr.) Keith Moore, Professor of Embryology and Chairman of the Department of Anatomy at the University of Toronto, in Canada. At present he is one of the highest authorities in the field of Embryology.\n" +
+                    "He was asked to give his opinion regarding the material presented to him. After carefully examining it, Dr. Moore said that most of the\n" +
+                    "information concerning embryology mentioned in the Qur’an and the undisputed Hadith is in perfect conformity with modern discoveries in the field of embryology and does not conflict with them in any way. He added that there were a few verses however, on whose scientific accuracy he could not comment. He could not say whether the statements were true or false, since he was himself unaware of the information contained therein. There was also no mention of this information in modern writings and studies on embryology.\n" +
+                    "One such verse is:\n" +
+                    "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ\n" +
+                    "\"Proclaim, or Read in the name of thy Lord and Cherisner, who created\"\n" +
+                    "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ\n" +
+                    "\"Created man, out of a(mere) clot of congealed blood\" [ 96:1-2 ]\n" +
+                    "The Arabic word alaq, besides meaning a congealed clot of blood, also means something that clings, a leech-like substance.\n" +
+                    "Dr. Keith Moore had no knowledge whether an embryo in the initial stages appears like a leech. To check this out he studied the initial stage of the embryo under a very powerful microscope and compared what he observed with the diagram of a leech.\tHe\twas\tastonished\tat\tthe\tstriking resemblance between the two!\n" +
+                    "In the same manner, he acquired more information on embryology, that was hitherto not known to him, from the Qur’an.\n" +
+                    "Dr. Keith Moore answered about eighty questions dealing with embryological data mentioned in the Qur’an and Hadith. Noting that the information contained in the Qur’an and Hadith was in full agreement with the latest discoveries in the field of embryology, Prof. Moore said, “If I was asked these questions thirty years ago, I would not have been able to answer half of them for lack of scientific information”. 1\n" +
+                    "In 1981, during the Seventh Medical Conference in Dammam, Saudi Arabia, Dr. Moore said, “I t has been a great pleasure for me to help clarify statements in the Qur’an  about  human development. I t is clear to me that these statements must have come to Muhammad from God or Allah, because almost all of this knowledge was not discovered until many centuries later. This  proves  to  me that Muhammad must have been a messenger of God or Allah”. 2\n" +
+                    "Dr. Keith Moore had earlier authored the book, ‘The Developing Human’. After acquiring new knowledge from the Qur’an, he wrote, in 1982, the 3rd edition of the same book, ‘The Developing\n" +
+                    "Human’. The book was the recipient of an award for the best medical book written by a single author. This book has been translated into several major languages of the world and is used as a textbook of embryology in the first year of medical studies.\n" +
+                    "Dr. Joe Leigh Simpson, Chairman of the Department of Obstetrics and Gynaecology, at the Baylor College of Medicine, Houston, U.S.A., proclaims: “...these Hadiths, sayings of Muhammad (pbuh), could not have been obtained on the basis of the scientific knowledge that was available at the t ime of the writer (implying in the 7th century). It follows that not only is there no conflict between genetics and religion (implying Islam) but in fact religion (Islam) may guide science by adding revelation to some of the traditional  scientific  approaches . . .\tthere exist statements in the Qur’an shown centuries later to be valid which support knowledge in the Qur’an having been derived from God.”\n" +
+                    "DROP EMITTED FROM BETWEEN THE BACK BONE AND THE RIBS\n" +
+                    "فَلْيَنْظُرِ الْإِنْسَانُ مِمَّ خُلِقَ\n" +
+                    "\"Now let man but think from what he is created\"\n" +
+                    "خُلِقَ مِنْ مَاءٍ دَافِقٍ\n" +
+                    "\"He is created from a drop emitted\"\n" +
+                    "يَّخۡرُجُ مِنۡۢ بَيۡنِ الصُّلۡبِ وَالتَّرَآٮِٕبِؕ\n" +
+                    "\"Proceeding from between the back bone and the ribs\" [ 86:5-7]\n" +
+                    "In embryonic stages, the reproductive organs of the male and female, i.e. the testicles and the ovaries, begin their development near the kidney between the spinal column and the eleventh and twelfth ribs. Later they descend; the female gonads (ovaries) stop in the pelvis while the male gonads (testicles) continue their descent before birth to reach the scrotum through the inguinal canal. Even in adulthood after the descent of the reproductive organs, these organs receive their nerve supply and blood supply from the Abdominal Aorta, which is in the area between the backbone (spinal column) and the ribs. The lymphatic drainage and the venous return also go to the same area.\n" +
+                    "NUTFAH – MINUTE QUANTITY OF LIQUID\n" +
+                    "The Glorious Qur’an mentions no less than eleven times that  the human being is created from\tnutfah , which means a minute quantity of liquid or a trickle of liquid that remains after emptying a cup. This is mentioned in several verses of the Qur’an including 22:5 and 23:13.\n" +
+                    "Science has confirmed in recent times that only one out of an average of three million sperms is required for fertilising the ovum. This means that only 1/3 millionth part or 0.00003% of the quantity of sperms\n" +
+                    "that are emitted is required for fertilisation.\n" +
+                    "SULALAH – QUINTESSENCE OF LIQUID\n" +
+                    "ثُمَّ جَعَلَ نَسْلَهُ مِنْ سُلَالَةٍ مِنْ مَاءٍ مَهِينٍ\n" +
+                    "\"And made his progeny from a quintessence of the nature of a fluid despised\" [ 32:8 ]\n" +
+                    "The Arabic word sulaalah means quintessence or the best part of a whole. We have come to know now that only one single spermatozoon that penetrates the ovum is required for fertilization, out of the several million produced by man. That one spermatozoon out of  several million, is  referred to in  the Qur’an\tas sulaalah . We have also come to know now that only one ovum is fertilized out of the tens of thousand produced by the female. That one ovum out of  tens of thousand is also  refered  to  in  the  Qur' an  as S ulaalah. This word also means gentle extraction from a fluid. The fluid refers to both male and female germinal fluids containing gametes. Both ovum and sperm are gently extracted from their environments in the process of fertilization.\n" +
+                    "\n" +
+                    "NUTFATUN AMSHAAJ – MINGLED LIQUIDS\n" +
+                    "إِنَّا خَلَقْنَا الْإِنْسَانَ مِنْ نُطْفَةٍ أَمْشَاجٍ \n" +
+                    "\"Verily We created man from a drop of mingled sperm\" [ 76:2 ]\n" +
+                    "The Arabic word nutfatin amshaajin means mingled liquids. According to some commentators of the Qur’an, mingled liquids refers to the male or female agents or liquids. After mixture of male and female gamete, the zygote s till remains nutfah . Mingled liquids can also refer to spermatic fluid that is formed of various secretions that come from various glands.\n" +
+                    "Therefore, nutfatin amshaaj , i.e. a minute quantity of mingled fluids refers to the male and female gametes (germinal fluids or cells) and part of the surrounding fluids.\n" +
+                    "SEX DETERMINATION\n" +
+                    "The sex of a foetus is determined by the nature of the sperm and not of the ovum. The sex of the child, whether female or male, depends on whether the 23rd pair of chromosomes is XX or XY respectively.\n" +
+                    "Primarily, sex determination occur s at fertilization and depends upon the type of sex chromosome in the sperm that fertilizes an ovum. If i t is an ‘X’ bearing sperm that fertilizes the ovum,  the foetus is a female and if i t is a ‘Y’  bearing sperm  then the foetu s is a male.\n" +
+                    "وَأَنَّهُ خَلَقَ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنْثَىٰ\n" +
+                    "\"That He did create in pairs - male and female,\"\n" +
+                    "مِنْ نُطْفَةٍ إِذَا تُمْنَىٰ\n" +
+                    "\"from a seed when lodged(in its place)\" [ 53:45-46 ]\n" +
+                    "The Arabic word nutfah means a minute quantity of liquid and tumnaa means ejaculated or planted.\n" +
+                    " \n" +
+                    "Therefore  nutfah\tspecifically refers to sperm because it is ejaculated The Qur’an says:\n" +
+                    "أَلَمْ يَكُ نُطْفَةً مِنْ مَنِيٍّ يُمْنَىٰ; ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ; فَجَعَلَ مِنْهُ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنْثَىٰ\n" +
+                    "\"Was he not a drop of sperm emitted(in lowly form) ?; Then did he become a clinging clot then did (Allah) make and fashion(him) in due proportion; And of him He made two sexes, male and female\" [ 75:37-39 ]\n" +
+                    "Here again i t is mentioned that a small quantity (drop) of sperm (indicated by the word nutfatan min maniyyin ) which comes from the man is responsible for the sex of the foetu s.\n" +
+                    "Mothers-in-law in the Indian subcontinent, usually prefer having male grandchildren and often blame their daughters-in-law if the child is not a boy. If only they knew that the determining factor is the nature of the male sperm and not  the female ovum! If they were to blame anybody, they should rather blame their sons, not their daughters-in-law, since both the Qur’an and Science hold that it is the male fluid that is responsible for the sex of the child!\n" +
+                    " \n" +
+                    "FOETUS PROTECTED BY THREE VEILS OF DARKNESS\n" +
+                    "يَخْلُقُكُمْ فِي بُطُونِ أُمَّهَاتِكُمْ خَلْقًا مِنْ بَعْدِ خَلْقٍ فِي ظُلُمَاتٍ ثَلَاثٍ ۚ\n" +
+                    "\"He makes you, in the wombs of your mothers, in stages, one after mother, in three veils of darkness.\" [ 39:6 ]\n" +
+                    "Accor ding to Prof. Keith Moore, these three veils of darkness in the Qur’an refer to:\n" +
+                    "(i)\tanterior abdominal wall of the mother\n" +
+                    "(ii)\tthe uterine wall\n" +
+                    "(iii)\tthe amnio-chorionic membrane.\n" +
+                    "EMBRYOLOGICAL STAGES\n" +
+                    "وَلَقَدْ خَلَقْنَا الْإِنْسَانَ مِنْ سُلَالَةٍ مِنْ طِينٍ; ثُمَّ جَعَلْنَاهُ نُطْفَةً فِي قَرَارٍ مَكِينٍ; ثُمَّ خَلَقْنَا النُّطْفَةَ عَلَقَةً فَخَلَقْنَا الْعَلَقَةَ مُضْغَةً فَخَلَقْنَا الْمُضْغَةَ عِظَامًا فَكَسَوْنَا الْعِظَامَ لَحْمًا ثُمَّ أَنْشَأْنَاهُ خَلْقًا آخَرَ ۚ فَتَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ\n" +
+                    "\"Man We did create from a quintessence (of clay); then We placed him as(a drop of) sperm in a place of rest, firmly fixed; then We made the sperm into a clot of congealed blood then of that clot We made a (foetus) lump; then We made out of that lump bones and clothed the bones with flesh; then We developed out of it another creature. so blessed be Allah, the Best to create\" [ 23:12-14 ]\n" +
+                    "In this verse Allah  states  that  man  is created from a small quantity of liquid which is placed in a place of rest, firmly fixed (well established or lodged) for which the Arabic word qaraarin m akeen is used. The uterus is well protected from the posterior by the spinal column supported firmly by the back muscles. The embryo is further protected by the amniotic sac containing the amniotic fluid. Thus the foetu s has a well protected dwelling place.\n" +
+                    "This small quantity of fluid is made into alaqah , meaning something which clings.  I t  also  means a leech-like substance. Both descriptions are scientifically acceptable as in the very early stages the foetus clings to the wall and also appears to resemble the leech in shape. I t also behaves like a leech (blood sucker) and acquires its blood supply from the mother through the placenta.\n" +
+                    "The third meaning of the word alaqah is a blood clot. During this alaqah stage, which spans the third and fourth week of pregnancy, the blood clots within closed vessels. Hence the embryo acquires the appearance of a blood clot in addition to\n" +
+                    "acquiring the appearance of a leech. Compare the readily available Qur' anic knowledge with Man's struggle with scientific findings:\n" +
+                    "In 1677,  Hamm  and  Leeuwenhoek  were   the fir s t scientists to observe human sperm cells (spermatozoa) through a microscope. They thought that a sperm cell contained a miniature human being which grew in the uterus to form a newborn. This was known as the perforation theory. When scientists discovered that the ovum was bigger than the sperm, it was thought by scientists like De Graf and others that the foetus existed in a miniature form in the ovum. Later, in the 18 th century, Maupertuis propagated the theory of biparental inheritance.\n" +
+                    "The alaqah is transformed into m udghah which means ‘something that is chewed (having teeth marks)’ and also something that is tacky and small which can be put in the mouth like gum. Both these explanations are scientifically correct. Prof. Keith Moore took a piece of plaster seal and made it into the size and shape of the early stage of foetus and chewed i t between the teeth to make i t into a mudghah . He compared this with the photographs of the early stage of foetus. The teeth marks resembled the ‘somites’ which is the early formation of the spinal column.\n" +
+                    "This m udghah is transformed into bones ( izâm ). The bones are clothed with intact flesh or muscles (lahm ). Then Allah makes it into another creature.\n" +
+                    " \n" +
+                    "Prof. Marshall Johnson who is one of the leading scientists in the USA, and is the head of the Department of Anatomy and Director of the Daniel Institute at the Thomas J efferson University in Philadelphia in the USA, was ask ed to comment on the verses of the Qur’an dealing with embryology. At first he said that the verses of the Qur’an describing the embryological stages cannot be a coincidence. It was probable that Muhammad (pbuh) had a powerful microscope. On being reminded that the Qur’an was revealed 1400 years ago, and microscopes were invented many centuries after the time of Prophet Muhammad (pbuh), Prof. Johnson laughed and admitted that the first microscope invented could not magnify more than 10 times and could not show a clear picture.\n" +
+                    "Later he said: “I see nothing here in conflict with the concept that Divine intervention was involved when Muhammad (pbuh) recited the Qur’an.” 1\n" +
+                    "According\tto\tDr.\tKeith\t\tMoore,\t\tthe\tmodern classification of embryonic development stages which is adopted throughout the world, is not easily comprehensible, since i t identifies stages on a numerical basis i.e. stage 1, stage 2, etc. On the other hand, the divisions revealed in the Qur’an are based on distinct and easily identifiable forms or shapes, which the embryo passes through. These are\tbased\t\ton\t\tdifferent\tphases\tof\tpre-natal\n" +
+                    "development\n" +
+                    "and provide elegant scientific descriptions that are com prehensible and practical.\n" +
+                    "Embryological stages of human development have also been described in the following verses:\n" +
+                    "أَلَمْ يَكُ نُطْفَةً مِنْ مَنِيٍّ يُمْنَىٰ\n" +
+                    "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ\n" +
+                    "فَجَعَلَ مِنْهُ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنْثَىٰ\n" +
+                    "\"Was he not a drop of sperm emitted(in lowly form) ?; Then did he become a clinging clot then did (Allah) make and fashion(him) in due proportion; And of him He made two sexes, male and female\" [ 75:37-39 ]\n" +
+                    "الَّذِي خَلَقَكَ فَسَوَّاكَ فَعَدَلَكَ\n" +
+                    "فِي أَيِّ صُورَةٍ مَا شَاءَ رَكَّبَكَ\n" +
+                    "\"Him Who created thee, fashioned thee in due proportion, and gave thee a just bias; in whatever From He wilss does He puts thee together\" [ 82:7-8 ]\n" +
+                    "EMBRYO PARTLY FORMED AND PARTLY UNFORMED\n" +
+                    "At the mudghah stage, if an incision is made in the embryo and the internal organ is dissected, it will be seen that most of them are formed while the remaining are not yet completely formed.\n" +
+                    "According to Prof. Johnson, if we describe the embryo as a complete creation, then we are only describing that  part  which  is  already  created. If we describe i t as an incomplete creation, then we are only describing that part which is not yet created. So, is it a complete creation or an incomplete creation? There is no better description of this stage of embryogenesis than the Qur’anic description, “partly formed and partly unformed”, as in the following verse:\n" +
+                    "خَلَقْنَاكُمْ مِنْ تُرَابٍ ثُمَّ مِنْ نُطْفَةٍ ثُمَّ مِنْ عَلَقَةٍ ثُمَّ مِنْ مُضْغَةٍ مُخَلَّقَةٍ وَغَيْرِ مُخَلَّقَةٍ لِنُبَيِّنَ لَكُمْ ۚ \n" +
+                    "\"We just created you out of dust, then out of sperm, then out of a leech-like clot, then put of a morsel of flesh, partly formed and partly unformed that We may manifest(Our Power) to you\" [ 22:5 ]\n" +
+                    "Scientifically we know that  at  this  early  stage of development there are some cells which are differentiated and there are some cells that are undifferentiated – some organs are formed and yet others unformed.\n" +
+                    "\n" +
+                    "SENSE OF HEARING AND SIGHT\n" +
+                    "The first sense to develop in a developing human embryo is hearing. The foetu s can hear sounds after the 24th week. Subsequently, the sense of sight is developed and by the 28th week, the retina becomes sensitive to light.\n" +
+                    "The Qur'an explains it thus:\n" +
+                    "وَجَعَلَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ ۚ \n" +
+                    "\"And He gave you (the faculties of) hearing and sight and feeling(and understanding)\" [ 32:9 ]\n" +
+                    "إِنَّا خَلَقْنَا الْإِنْسَانَ مِنْ نُطْفَةٍ أَمْشَاجٍ نَبْتَلِيهِ فَجَعَلْنَاهُ سَمِيعًا بَصِيرًا\n" +
+                    "\"Verily We created man from a drop of mingled sperm, in order to try him: so We gave him (the gifts),of Hearing and Sight\" [ 76:2 ]\n" +
+                    "وَهُوَ الَّذِي أَنْشَأَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ ۚ قَلِيلًا مَا تَشْكُرُونَ\n" +
+                    "\"It is He Who has created for you (the faculties of) hearing, sight, feeling and understanding: little thanks it is ye give\" [ 23:78 ]\n" +
+                    "In all these verses the sense of hearing is mentioned before that of sight. Thus the Qur’anic description matches perfectly with the discoveries in modern embryology.",
+            "FINGERPRINTS\n" +
+                    "أَيَحْسَبُ الْإِنْسَانُ أَلَّنْ نَجْمَعَ عِظَامَه\n" +
+                    "\"Does man think that We cannot assemble his bones?\"\n" +
+                    "بَلَىٰ قَادِرِينَ عَلَىٰ أَنْ نُسَوِّيَ بَنَانَهُ\n" +
+                    "\"Nay, We are able to put together in perfect order the very tips of his fingers\" [75:3-4]\n" +
+                    "Unbelievers argue regarding resurrection taking place after bones of dead people have disintegrated in the earth and how each individual would be identified on the Day of J udgement. Almighty Allah answers that He can not only assemble our bones but can also reconstruct perfectly our very fingertips.\n" +
+                    "Why does the Qur’an, while speaking about determination of the identity of the individual, speak specifically about fingertips?  In 1880, fingerprinting became the scientific method of identification, after research done by Sir Francis Golt. No two persons in the world can ever have exactly the same fingerprint pattern, not even identical twins. That is the reason why police forces worldwide use fingerprints to identify criminals.\n" +
+                    "Fourteen hundred years ago, who could have known the uniqueness of each human’s fingerprint? Surely it could have been none other than the Creator Himself!\n" +
+                    " \n" +
+                    "PAIN RECEPTORS IN THE SKIN\n" +
+                    "I t was thought that the sense of feeling and pain was dependent only on the brain. Recent discoveries however prove that there are pain receptors present in the skin, without which a person would not be able to feel pain.\n" +
+                    "When a doctor examines a patient suffering from burn injuries, he verifies the degree of burns by a pinprick. If the patient feels pain, the doctor is happy, because i t indicates that the burns are superficial and the pain receptors are intact. On the other hand, if the patient does not feel any pain, it indicates that i t is a deep burn and the pain receptors have been destroyed.\n" +
+                    "The Qur’an gives a clear indication of the existence of pain receptors in the following verse:\n" +
+                    "إِنَّ الَّذِينَ كَفَرُوا بِآيَاتِنَا سَوْفَ نُصْلِيهِمْ نَارًا كُلَّمَا نَضِجَتْ جُلُودُهُمْ بَدَّلْنَاهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا الْعَذَابَ ۗ إِنَّ اللَّهَ كَانَ عَزِيزًا حَكِيمًا\n" +
+                    "\"Those who reject our signs, We shall soon cast into the fire, as often as their skins are roasted through, we shall change them for fresh skin, that they may taste the Penalty: for Allah is Exalted in Power, Wise\" [ 4:56 ]\n" +
+                    "Prof. Tagatat Tejasen, Chairman of the Department of Anatomy at Chiang Mai University in Thailand, has spent a great amount of t ime on research of pain receptors. Initially he could not believe that the Qur’an mentioned this scientific fact 1,400 years ago. He later verified the translation of this particular Qur’anic verse. Prof. Tejasen was so impressed by the scientific accuracy of the Qur’anic verse, that at the 8 th Saudi Medical Conference held in Riyadh on the Scientific Signs of Qur’an and Sunnah,",
+            "To attribute the presence of scientific facts in the Qur’an to coincidence would be against common sense and a true scientific approach.\n" +
+                    "Indeed the scientific accuracy of the Qur'anic verses confirm the Qur'an's open declaration.\n" +
+                    "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ ۗ أَوَلَمْ يَكْفِ بِرَبِّكَ أَنَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ\n" +
+                    "\"Soon will We show them Our Signs in the (furthest) regions (of the earth), and in their own souls, until it becomes manifest to them that this is the Truth it is not enough that Thy Lord doth witness all things?\" [ 41:53 ]\n" +
+                    "The Qur’an invites all humans to reflect on the Creation of this universe in the verse:\n" +
+                    "إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِأُولِي الْأَلْبَابِ\n" +
+                    "\"Behold! In the creation of the heavens and the earth, and the alternation of Night and Day – there are indeed Signs for men of understanding\" [ 3:190 ]\n" +
+                    "The scientific evidences of the Qur’an clearly prove its Divine origin. No human could have produced a book, fourteen hundred years ago, that would contain such profoun d scientific facts.\n" +
+                    "The Qur’an, however, is not a book of Science but a book of ‘Signs’. These signs invite Man to realize the purpose of his existence on earth, and to live in harmony with Nature. The Qur’an  is truly a message from Allah, the Creator and Sustainer of the universe. I t contains the same Message of the Oneness of God, that was preached by all prophets, right from Adam, Moses, J esus to Muhammad (peace be upon them).\n" +
+                    "Several detailed tomes have been written on the subject of Qur’an and modern science and further research in this field is on. Inshallah, this research will help mankind to come closer to the Word of the Almighty. This booklet contains only a few of the scientific facts present in the Qur’an. I cannot claim to have done full justice to the subject.\n" +
+                    "Prof. Tejasen accepted Islam on the strength of just one scientific ‘sign’ mentioned in the Qu’ran. Some people may require ten signs while some may require hundred signs to be convinced about the Divine origin of the Qur’an. Some would be unwilling to accept the Truth even after being shown a thousand signs. The Qur’an condemns such a closed mentality in the verse:\n" +
+                    "صُمٌّۢ بُكْمٌ عُمْىٌ فَهُمْ لَا يَرْجِعُونَ\n" +
+                    "\"Deaf, dumb and blind, They will not return (To the path)\" [ 2:18 ]\n" +
+                    "The Qur’an contains a complete code of life for the individual and society. Alhamdulillah (Praise be to Allah), the Qur’anic way of life is far superior to the ‘isms’ that modern man has invented out of sheer ignorance. Who can give better guidance than the Creator Himself?\n" +
+                    "I pray that this humble effort is  accepted by Allah, to whom I pray for mercy and guidance (Aameen).\n"
     };
 
     static ArrayList<model> getListData(){
