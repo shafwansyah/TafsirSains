@@ -1,16 +1,16 @@
-package com.example.myapplication.home;
+package com.example.myapplication;
 
-public class model {
+import java.io.Serializable;
+
+public class model implements Serializable {
 
     private int img_icon;
     private String title;
     private String bacaan;
 
-    public String getBacaan() {
-        return bacaan;
-    }
-
-    public void setBacaan(String bacaan) {
+    public model() {
+        this.img_icon = img_icon;
+        this.title = title;
         this.bacaan = bacaan;
     }
 
@@ -28,5 +28,13 @@ public class model {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getBacaan() {
+        return bacaan;
+    }
+
+    public void setBacaan(String bacaan) {
+        this.bacaan = bacaan;
     }
 }

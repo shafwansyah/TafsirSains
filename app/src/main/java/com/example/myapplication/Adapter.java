@@ -1,4 +1,4 @@
-package com.example.myapplication.home;
+package com.example.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,24 +10,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresPermission;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.example.myapplication.R;
-import com.example.myapplication.ReadActivity;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Adapter extends PagerAdapter {
+public class Adapter extends PagerAdapter{
+
+    private ArrayList<model> modelList;
+    private Context context;
+    private LayoutInflater layoutInflater;
 
     public Adapter(ArrayList<model> modelList, Context context) {
         this.modelList = modelList;
         this.context = context;
     }
-
-    private ArrayList<model> modelList;
-    private Context context;
-    private LayoutInflater layoutInflater;
 
     @Override
     public int getCount() {
@@ -48,14 +45,12 @@ public class Adapter extends PagerAdapter {
 
         ImageView imageView;
         final TextView title;
-        final String bacaan;
 
         imageView = view.findViewById(R.id.img_viewpager);
         title = view.findViewById(R.id.text_viewpager);
 
         imageView.setImageResource(modelList.get(position).getImg_icon());
         title.setText(modelList.get(position).getTitle());
-        bacaan = modelList.get(position).getBacaan();
 
         container.addView(view, 0);
 
@@ -63,7 +58,10 @@ public class Adapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(context, ReadActivity.class);
-                i.putExtra("bacaan", bacaan);
+                modelList = IsiBacaan_en.getListData();
+                i.putExtra("tafsir_list", modelList);
+                i.putExtra("position", position);
+                Log.d("modellist", "onClick: "+modelList);
                 context.startActivity(i);
             }
         });
