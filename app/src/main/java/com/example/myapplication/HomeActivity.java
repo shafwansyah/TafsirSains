@@ -13,15 +13,18 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import io.paperdb.Paper;
 
 public class HomeActivity extends AppCompatActivity {
 
     ViewPager viewPager;
-    Adapter adapter;
+//    Adapter adapter;
     private Switch sw_gantibahasa;
-    private ArrayList<model> models = new ArrayList<>();
+    SAdapter string_adapter;
+    private List<SModel> string_models;
+//    private ArrayList<model> models = new ArrayList<>();
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -36,11 +39,15 @@ public class HomeActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         sw_gantibahasa = findViewById(R.id.switch_bahasa);
 
-        models.addAll(IsiBacaan_en.getListData());
-        adapter = new Adapter(models, this);
+//        models.addAll(IsiBacaan_en.getListData());
+        string_models = new ArrayList<>();
+        string_models.add(new SModel(R.drawable.intro,getResources().getString(R.string.intro),getResources().getString(R.string.intro_detail)));
+        string_models.add(new SModel(R.drawable.asstro,getResources().getString(R.string.astro), getResources().getString(R.string.astro_detail)));
+
+        string_adapter = new SAdapter(string_models, this);
         viewPager = findViewById(R.id.viewpager_Home);
-        viewPager.setAdapter(adapter);
-//
+        viewPager.setAdapter(string_adapter);
+
 //        Paper.init(this);
 //
 //        String language = Paper.book().read("language");
@@ -48,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
 //            Paper.book().write("language", "en");
 //
 //        updateView((String) Paper.book().read("language"));
-
+//
 //        sw_gantibahasa.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 //            @Override
 //            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -61,8 +68,6 @@ public class HomeActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
-//
-//    }
 
     }
 
@@ -70,10 +75,12 @@ public class HomeActivity extends AppCompatActivity {
 //        Context context = LocaleHelper.setLocale(this,language);
 //        Resources resources = context.getResources();
 //
-//        models.add(new model(R.drawable.intro, resources.getString(R.string.intro), resources.getString(R.string.intro_detail)));
-//        models.add(new model(R.drawable.asstro, resources.getString(R.string.intro), resources.getString(R.string.astro_detail)));
-//        adapter = new Adapter(models, this);
+//        string_models = new ArrayList<>();
+//        string_models.add(new SModel(R.drawable.intro,R.string.intro,R.string.intro_detail));
+//        string_models.add(new SModel(R.drawable.asstro,R.string.astro,R.string.astro_detail));
+//
+//        string_adapter = new SAdapter(string_models, this);
 //        viewPager = findViewById(R.id.viewpager_Home);
-//        viewPager.setAdapter(adapter);
+//        viewPager.setAdapter(string_adapter);
 //    }
 }
