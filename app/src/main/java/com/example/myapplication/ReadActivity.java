@@ -33,13 +33,13 @@ public class ReadActivity extends AppCompatActivity {
 
 
 
-        Intent intent = getIntent();
-        modelList = (ArrayList<model>) intent.getSerializableExtra("tafsir_list");
-        position = intent.getIntExtra("position", 0);
-
-        tafsir_logo.setImageResource(modelList.get(position).getImg_icon());
-        tafsir_title.setText(modelList.get(position).getTitle());
-        tafsir_bacaan.setText(modelList.get(position).getBacaan());
+//        Intent intent = getIntent();
+//        modelList = (ArrayList<model>) intent.getSerializableExtra("tafsir_list");
+//        position = intent.getIntExtra("position", 0);
+//
+//        tafsir_logo.setImageResource(modelList.get(position).getImg_icon());
+//        tafsir_title.setText(modelList.get(position).getTitle());
+//        tafsir_bacaan.setText(modelList.get(position).getBacaan());
 
 
     }

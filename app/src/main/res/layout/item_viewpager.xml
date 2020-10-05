@@ -10,7 +10,7 @@
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="523dp">
-        
+
         <RelativeLayout
             android:background="@color/viewPager"
             android:layout_width="match_parent"

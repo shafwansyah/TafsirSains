@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="intro">Perkenalan</string>
-    <string name="intro_detail">Mohon izin untuk memperkenalkan diri</string>
-    <string name="astro">Astronomi</string>
-    <string name="astro_detail">Astronomi adalah bidang keilmuan yang mempelejari tata surya</string>
-</resources>
