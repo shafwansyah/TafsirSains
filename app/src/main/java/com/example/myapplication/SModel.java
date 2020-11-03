@@ -1,15 +1,31 @@
 package com.example.myapplication;
 
-public class SModel {
+import android.net.Uri;
+
+import java.io.Serializable;
+
+public class SModel implements Serializable {
 
     private int image;
     private String title;
     private String desc;
+    private String yutub;
 
-    public SModel(int image, String title, String desc) {
+
+
+    public SModel(int image, String title, String desc, String yutub) {
         this.image = image;
         this.title = title;
         this.desc = desc;
+        this.yutub = yutub;
+    }
+
+    public String getYutub() {
+        return yutub;
+    }
+
+    public void setYutub(String yutub) {
+        this.yutub = yutub;
     }
 
     public int getImage() {

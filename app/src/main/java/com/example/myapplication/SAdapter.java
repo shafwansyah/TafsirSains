@@ -28,9 +28,7 @@ public class SAdapter extends PagerAdapter {
     private Context context;
 
     ImageView imageView;
-    TextView title, string;
-    Switch sw_gantiBahasa;
-    private String judulBab;
+    TextView title;
 
     public SAdapter(ArrayList<SModel> sModels, Context context) {
         this.sModels = sModels;
@@ -49,20 +47,12 @@ public class SAdapter extends PagerAdapter {
 
     @NonNull
     @Override
-    public Object instantiateItem(@NonNull ViewGroup container, int position) {
+    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
         layoutInflater = LayoutInflater.from(context);
         View view = layoutInflater.inflate(R.layout.item_viewpager,container,false);
 
-//        Paper.init(context);
-//        String language = Paper.book().read("language");
-//        if (language == null)
-//            Paper.book().read("language","en");
-//
-//        updateView((String) Paper.book().read("language"));
-
         imageView = view.findViewById(R.id.img_viewpager);
         title = view.findViewById(R.id.text_viewpager);
-        sw_gantiBahasa = view.findViewById(R.id.switch_bahasa);
 
         imageView.setImageResource(sModels.get(position).getImage());
         title.setText(sModels.get(position).getTitle());
@@ -73,6 +63,9 @@ public class SAdapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(context, ReadActivity.class);
+                i.putExtra("tafsir_list",sModels);
+                i.putExtra("position",position);
+                Log.d("listdata", "onClick: " + sModels);
                 context.startActivity(i);
             }
 

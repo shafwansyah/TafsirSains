@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="intro">Introduction</string>
-    <string name="intro_detail">Lemme Intro ma self</string>
-    <string name="astro">Astronomy</string>
-    <string name="astro_detail">Astronomy is major of knowledge</string>
-
-</resources>
