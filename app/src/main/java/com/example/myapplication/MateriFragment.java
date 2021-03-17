@@ -69,11 +69,12 @@ public class MateriFragment extends Fragment {
             @Override
             public void onResponse(Call<List<ModelMateri>> call, Response<List<ModelMateri>> response) {
                 progressBar.setVisibility(View.GONE);
-                int i;
-                for (i=0; i<modelMateriList.size(); i++){
-                    // TODO: 17/03/21
-                    modelMateriList = response.body();
-                }
+                modelMateriList = response.body();
+//                int i;
+//                for (i=0; i<modelMateriList.size(); i++){
+//                    // TODO: 17/03/21
+//                    modelMateriList.get(i);
+//                }
                 Log.d("Data", "onResponse: " + modelMateriList.size());
                 adapterMateri = new AdapterMateri(modelMateriList, context);
                 rv_materi.setAdapter(adapterMateri);

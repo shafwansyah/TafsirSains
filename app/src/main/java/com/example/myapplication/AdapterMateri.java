@@ -13,6 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -38,7 +40,8 @@ public class AdapterMateri extends RecyclerView.Adapter<AdapterMateri.MyHolder> 
     @Override
     public void onBindViewHolder(@NonNull final MyHolder holder, final int position) {
         holder.judul.setText(modelMateriList.get(position).getJudul());
-//        holder.icon.setImageResource(modelMateriList.get(position).getImage());
+//        Glide.with(context).load("https://api-tafsirsainsmobile.000webhostapp.com/tafsir_sains/"+modelMateriList.get(position))
+//                .placeholder(R.drawable.intro).into(holder.icon);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +72,7 @@ public class AdapterMateri extends RecyclerView.Adapter<AdapterMateri.MyHolder> 
             super(itemView);
 
             judul = itemView.findViewById(R.id.text_viewpager);
-            icon = itemView.findViewById(R.id.img_viewpager);
+//            icon = itemView.findViewById(R.id.img_viewpager);
         }
     }
 }

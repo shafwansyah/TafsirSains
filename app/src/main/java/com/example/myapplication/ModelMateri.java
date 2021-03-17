@@ -22,6 +22,9 @@ public class ModelMateri{
 	@SerializedName("judul")
 	private String judul;
 
+	@SerializedName("path_icon")
+	private String path_icon;
+
 	@SerializedName("dalil")
 	private String dalil;
 
@@ -53,6 +56,10 @@ public class ModelMateri{
 
 	public String getJudul(){
 		return judul;
+	}
+
+	public String getPath_icon() {
+		return path_icon;
 	}
 
 	public String getDalil(){

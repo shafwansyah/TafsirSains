@@ -9,6 +9,8 @@ import retrofit2.http.Query;
 public interface ApiInterface {
 
     @GET("getdata.php")
-    Call<List<ModelMateri>> getData(@Query("key") String keyword);
+    Call<List<ModelMateri>> getData(
+            @Query("key") String keyword
+    );
 }
 
