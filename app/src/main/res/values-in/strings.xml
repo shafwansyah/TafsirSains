@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Laboratorium Tafsir Sains</string>
     <string name="intro">Perkenalan</string>
     <string name="intro_detail">"Sejak fajar kehidupan manusia menyingsing di planet ini, mereka selalu berusaha memahami alam tempat berlangsungnya kehidupan, dalam skema penciptaan dan tujuan kehidupan itu sendiri. Dalam rangka mencari kebenaran itu, selama berabad-abad lamanya dan melewati beragam peradaban, agama telah memberikan petunjuk dalam mengatur kehidupan manusia sepanjang sejarah. Sementara beberapa agama yang bersumber kepada buku karangan manusia, diklaim oleh para pengikutnya bahwa itu adalah wahyu ilahi, padahal, hanya mengandalkan pengalaman hidup seseorang.\n"
             "Al-Qur’an, sumber utama rujukan umat Islam, adalah sebuah kitab yang diyakini oleh para Muslim, sebagai wahyu Ilahi. Setiap Muslim meyakini bahwa Al-Qur’an mengandung petunjuk untuk semua manusia. Al-Qur’an dipercaya akan terus berlaku sepanjang waktu, maka apa yang ada didalamnya akan selalu relevan dengan perkembangan zaman. Apakah Al-Qur’an mampu melewati segala tantangan ini ? Dalam buku kecil ini, Saya berniat memberikan sebuah analisis objektif terhadap keyakinan umat Islam akan keautentikan Al- Qur’an sebagai wahyu Ilahi berdasarkan beberapa penemuan Ilmiah.\n"
@@ -426,4 +425,6 @@ Bukti-bukti ilmiah yang ada dalam Al-qur’an dengan jelas membuktikan bahwa Al-
 Bagaimanapun juga Al-qur’an bukanlah buku ilmu pengetahuan melainkan kitab yang memiliki ‘tanda-tanda’. Tanda-tanda ini mengajak
 
 </string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="exit_app">Keluar Aplikasi</string>
 </resources>

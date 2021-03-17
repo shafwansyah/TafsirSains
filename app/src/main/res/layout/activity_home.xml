@@ -1,55 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="@color/Cyan"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    android:layout_width="match_parent">
 
-    <ImageView
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_above="@id/bottom_navbar"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:src="@drawable/header" />
+        android:layout_height="match_parent"/>
 
-        <androidx.core.widget.NestedScrollView
-            android:layout_marginTop="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navbar"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/viewPager" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewpager_Home"
-                android:layout_width="320dp"
-                android:layout_height="500dp"
-                android:layout_margin="12dp"
-                android:clipToPadding="false"
-                android:layout_centerInParent="true"
-                android:foregroundGravity="center"
-                android:overScrollMode="never">
-            </androidx.viewpager.widget.ViewPager>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignBottom="@id/viewpager_Home"
-                android:layout_marginRight="24dp"
-                android:src="@drawable/ic_baseline_settings_24"
-                app:fabSize="auto"
-                app:borderWidth="0dp"
-                app:elevation="6dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:id="@+id/fab"
-                />
-
-            </RelativeLayout>
-
-        </androidx.core.widget.NestedScrollView>
-
-
-</LinearLayout>
+</RelativeLayout>

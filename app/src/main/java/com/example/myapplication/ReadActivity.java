@@ -1,61 +1,77 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ReadActivity extends AppCompatActivity {
 
     private Integer position;
-    String title, bacaan;
-    FloatingActionButton btnYutub;
     TextView tafsir_bacaan, tafsir_title;
-    ImageView tafsir_logo;
-    ArrayList<SModel> modelList;
+    List<ModelMateri> modelList;
+    CardView cardView;
+    public static Dialog myDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read);
 
-        getSupportActionBar().hide();
-
         tafsir_bacaan = findViewById(R.id.text_reading);
         tafsir_title = findViewById(R.id.title_reading);
-        btnYutub = findViewById(R.id.fabYutub);
+        cardView = findViewById(R.id.cardview_reading);
 
         Intent intent = getIntent();
-        modelList = (ArrayList<SModel>) intent.getSerializableExtra("tafsir_list");
-        position = intent.getIntExtra("position", 0);
-        
-        tafsir_title.setText(modelList.get(position).getTitle());
-        tafsir_bacaan.setText(modelList.get(position).getDesc());
+        position = intent.getIntExtra("POSITION",0);
+        modelList = (List<ModelMateri>) intent.getSerializableExtra("MODELMATERI");
+        tafsir_title.setText(modelList.get(position).getJudul());
+//        tafsir_bacaan.setText(modelList.get(position).getDesc());
 
-        btnYutub.setOnClickListener(new OnClickListener() {
+        cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent yutubIntent = new Intent(Intent.ACTION_VIEW, Uri.parse((modelList.get(position).getYutub())));
-                yutubIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                yutubIntent.setPackage("com.google.android.youtube");
-                startActivity(yutubIntent);
+                showPopup(ReadActivity.this);
             }
         });
 
+    }
 
+    public void showPopup(Activity activity){
 
+        TextView txtclose;
+
+        myDialog = new Dialog(activity);
+        myDialog.setCancelable(false);
+        myDialog.setContentView(R.layout.popup_image);
+
+        List<ModelMateri> list = new ArrayList<>();
+        RecyclerView recyclerView = myDialog.findViewById(R.id.rv_popup);
+        AdapterPopup adapterPopup = new AdapterPopup(ReadActivity.this, modelList);
+
+        txtclose = myDialog.findViewById(R.id.tv_closePopup);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+//        list.addAll(ModelMateri.getListData());
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2, GridLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(gridLayoutManager);
+        recyclerView.setAdapter(adapterPopup);
+
+        myDialog.show();
     }
 
 }
