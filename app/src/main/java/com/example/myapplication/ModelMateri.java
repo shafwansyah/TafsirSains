@@ -2,68 +2,82 @@ package com.example.myapplication;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ModelMateri{
+import java.io.Serializable;
 
-	@SerializedName("id_bhs")
-	private String idBhs;
+public class ModelMateri implements Serializable {
 
-	@SerializedName("bahasa")
-	private String bahasa;
+    @SerializedName("id_bhs")
+    private String idBhs;
 
-	@SerializedName("level")
-	private String level;
+    @SerializedName("bahasa")
+    private String bahasa;
 
-	@SerializedName("id_sub")
-	private String idSub;
+    @SerializedName("level")
+    private String level;
 
-	@SerializedName("penjelasan")
-	private String penjelasan;
+    @SerializedName("id_sub")
+    private String idSub;
 
-	@SerializedName("judul")
-	private String judul;
+    @SerializedName("penjelasan")
+    private String penjelasan;
 
-	@SerializedName("dalil")
-	private String dalil;
+    @SerializedName("judul")
+    private String judul;
 
-	@SerializedName("id_chp")
-	private String idChp;
+    @SerializedName("dalil")
+    private String dalil;
 
-	@SerializedName("isi")
-	private String isi;
+    @SerializedName("id_chp")
+    private String idChp;
 
-	public String getIdBhs(){
-		return idBhs;
-	}
+    @SerializedName("isi")
+    private String isi;
 
-	public String getBahasa(){
-		return bahasa;
-	}
+    public ModelMateri(String idBhs, String bahasa, String level, String idSub, String penjelasan, String judul, String dalil, String idChp, String isi) {
+        this.idBhs = idBhs;
+        this.bahasa = bahasa;
+        this.level = level;
+        this.idSub = idSub;
+        this.penjelasan = penjelasan;
+        this.judul = judul;
+        this.dalil = dalil;
+        this.idChp = idChp;
+        this.isi = isi;
+    }
 
-	public String getLevel(){
-		return level;
-	}
+    public String getIdBhs() {
+        return idBhs;
+    }
 
-	public String getIdSub(){
-		return idSub;
-	}
+    public String getBahasa() {
+        return bahasa;
+    }
 
-	public String getPenjelasan(){
-		return penjelasan;
-	}
+    public String getLevel() {
+        return level;
+    }
 
-	public String getJudul(){
-		return judul;
-	}
+    public String getIdSub() {
+        return idSub;
+    }
 
-	public String getDalil(){
-		return dalil;
-	}
+    public String getPenjelasan() {
+        return penjelasan;
+    }
 
-	public String getIdChp(){
-		return idChp;
-	}
+    public String getJudul() {
+        return judul;
+    }
 
-	public String getIsi(){
-		return isi;
-	}
+    public String getDalil() {
+        return dalil;
+    }
+
+    public String getIdChp() {
+        return idChp;
+    }
+
+    public String getIsi() {
+        return isi;
+    }
 }

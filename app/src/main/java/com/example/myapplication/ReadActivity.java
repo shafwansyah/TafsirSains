@@ -1,16 +1,16 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class ReadActivity extends AppCompatActivity {
 
     private Integer position;
     TextView tafsir_bacaan, tafsir_title;
-    List<ModelMateri> modelList;
+    ModelMateri modelList;
     CardView cardView;
     public static Dialog myDialog;
 
@@ -33,10 +33,11 @@ public class ReadActivity extends AppCompatActivity {
         cardView = findViewById(R.id.cardview_reading);
 
         Intent intent = getIntent();
-        position = intent.getIntExtra("POSITION",0);
-        modelList = (List<ModelMateri>) intent.getSerializableExtra("MODELMATERI");
-        tafsir_title.setText(modelList.get(position).getJudul());
-//        tafsir_bacaan.setText(modelList.get(position).getDesc());
+        position = intent.getIntExtra("POSITION", 0);
+        modelList = (ModelMateri) intent.getSerializableExtra("MODELMATERI");
+
+        tafsir_title.setText(modelList.getJudul());
+        tafsir_bacaan.setText(modelList.getIsi());
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +57,9 @@ public class ReadActivity extends AppCompatActivity {
         myDialog.setContentView(R.layout.popup_image);
 
         List<ModelMateri> list = new ArrayList<>();
+        list.add(modelList);
         RecyclerView recyclerView = myDialog.findViewById(R.id.rv_popup);
-        AdapterPopup adapterPopup = new AdapterPopup(ReadActivity.this, modelList);
+        AdapterPopup adapterPopup = new AdapterPopup(ReadActivity.this, list);
 
         txtclose = myDialog.findViewById(R.id.tv_closePopup);
         txtclose.setOnClickListener(new View.OnClickListener() {

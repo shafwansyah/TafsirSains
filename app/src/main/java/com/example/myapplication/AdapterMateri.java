@@ -1,9 +1,7 @@
 package com.example.myapplication;
 
-import android.app.LauncherActivity;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +11,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.io.Serializable;
 import java.util.List;
 
 public class AdapterMateri extends RecyclerView.Adapter<AdapterMateri.MyHolder> {
@@ -44,11 +41,9 @@ public class AdapterMateri extends RecyclerView.Adapter<AdapterMateri.MyHolder> 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ReadActivity.class);
-                intent.putExtra("POSITION",position);
-                intent.putExtra("MODELMATERI", (Serializable) modelMateriList);
-//                intent.putExtra("JUDUL", modelMateriList.get(position).getTitle());
-//                intent.putExtra("IMAGE", modelMateriList.get(position).getImage());
-//                intent.putExtra("DETAIL", modelMateriList.get(position).getDesc());
+                intent.putExtra("POSITION", position);
+                ModelMateri model = modelMateriList.get(position);
+                intent.putExtra("MODELMATERI", model);
                 context.startActivity(intent);
             }
         });
